@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css">
+        
+        <link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+        
+		<title>Experience</title>
+
+	</head>
+	<body>
+
+		<div id="wrapper">
+		  <header>
+				<div id="header-inner">
+					
+                    <div id="logo">
+                    	<img src="images/logo.png" alt="Logo" style="width:150px;height:91.5px;">
+					</div>
+                    
+                    
+                    <div id="nav">
+                    	
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="index.html">HOME</a></button>
+                		</div>
+                    
+                    	<div class="dropdown">
+                          <button class="dropbtn"><a href="history.html">HISTORY</a></button>
+                		</div>
+                    
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="technology.html">TECHNOLOGY</a></button>
+                          
+                		</div>
+                        
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="experience.html">EXPERIENCE</a></button>
+                        
+                		</div>
+                        
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="about.html">ABOUT</a></button>
+                		</div>   
+                    </div>
+                </div>
+         </header>
+         
+         
+         
+         
+         
+        <div id="body-inner">
+        <div id="container">
+         	<div id="first">
+            <h4>Experience</h4>
+            <p>One thing that differentiates us from most museums is that we not only want to educate you about golf history and technology, but also provide a full immersive experience. We have a large selection of limited edition drivers, woods,
+irons, wedges, and putters that you can try out. You can play on all 5 of the courses we have displays on with our clubs on our simulators. We also have an indoor putting and chipping area. We have instructors all over the museum who can help you regardless of what level you are at. Here are some of the features we have:</p>
+			
+         </div>
+            <div id="third">
+            
+            	<br>
+                <div>
+                    <div class="hovereffect">
+                    <img class="img-responsive" src="images/thumbs/interactive.png">
+                        <div class="overlay">
+                        <h6>INTERACTIVE</h6>
+                        <a class="group1 info" href="images/interactive/instructor.png" title="Instructors">VIEW</a>
+                        </div>
+                	</div>
+                </div>
+                
+               &ensp;
+                
+                <div>
+                    <div class="hovereffect">
+                    <img class="img-responsive" img src="images/thumbs/events.png">
+                        <div class="overlay">
+                        <h6>EVENTS</h6>
+                        <a class="group2 info" href="images/events/sc.png" title="<b>June 11th-17th</b> Scotty Cameron Exhibit & Exclusive collection to demo">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+			</div>
+          		
+            </div>
+    		</div>
+            
+            
+            <div id="container2" style="visibility: hidden">
+        
+        <a class="group1" href="images/interactive/simulator.png" title="Indoor Simulators"></a>
+        <a class="group1" href="images/interactive/putting.png" title="Indoor Putting and Chipping"></a>
+		
+        
+        
+        
+        
+		<a class="group2" href="images/events/tw.png" title="<b>June 11th-17th</b> Demo the clubs Tiger Woods used to win the 2008 US Open at Torrey Pines"></a>
+        
+        </div>
+            
+            
+            
+            
+           </div>
+          </div>
+		                 
+        
+        
+         
+         
+         
+    </body>
+</html>

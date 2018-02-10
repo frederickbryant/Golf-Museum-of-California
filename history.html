@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css">
+        
+        
+        <link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+        
+        
+        
+		<title>History</title>
+
+	</head>
+	<body>
+
+		<div id="wrapper">
+		  <header>
+				<div id="header-inner">
+					
+                    <div id="logo">
+                    	<img src="images/logo.png" alt="Logo" style="width:150px;height:91.5px;">
+					</div>
+                    
+                    
+                    <div id="nav">
+                    	
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="index.html">HOME</a></button>
+                		</div>
+                    
+                    	<div class="dropdown">
+                          <button class="dropbtn"><a href="history.html">HISTORY</a></button>
+                		</div>
+                    
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="technology.html">TECHNOLOGY</a></button>
+                          
+                		</div>
+                        
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="experience.html">EXPERIENCE</a></button>
+                        
+                		</div>
+                        
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="about.html">ABOUT</a></button>
+                		</div>   
+                    </div>
+                </div>
+         </header>
+         
+         
+         
+         
+         
+        <div id="body-inner">
+        <div id="container">
+         	<div id="first">
+            <h4>History</h4>
+            <p>California significantly impacted the history of golf. Some of
+the most famous courses in the world are located here. There have 
+been a total of 12 US Opens held here and 4 in the past 16 years. It has
+only continued to grow as there are 3 more planned in the next 8 years
+including the first time ever at the Los Angeles Country Club in 2023. California is also known for having many famous pros such as Tiger Woods, Mickey Wright, Billy Casper, and Phil Mickelson. Check out the players and courses we have diplays on:</p>
+         </div>
+            <div id="third">
+            
+            	<br>
+                <div>
+                    <div class="hovereffect">
+                    <img class="img-responsive" src="images/thumbs/courses.png">
+                        <div class="overlay">
+                        <h6>COURSES</h6>
+                        <a class="group1 info" href="images/courses/lacc.png" title="Los Angeles Country Club">VIEW</a>
+                        </div>
+                	</div>
+                </div>
+                
+               &ensp;
+                
+                <div>
+                    <div class="hovereffect">
+                    <img class="img-responsive" img src="images/thumbs/players.png">
+                        <div class="overlay">
+                        <h6>PLAYERS</h6>
+                        <a class="group2 info" href="images/players/woods.png" title="Tiger Woods">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+             </div>  
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+        <div id="container2" style="visibility: hidden">
+        
+        <a class="group1" href="images/courses/tp.png" title="Torrey Pines"></a>
+		<a class="group1" href="images/courses/rcc.png" title="Riviera Country Club"></a>
+        <a class="group1" href="images/courses/toc.png" title="The Olympic Club"></a>
+        <a class="group1" href="images/courses/pb.png" title="Pebble Beach"></a>
+        
+        
+        
+        
+		<a class="group2" href="images/players/mickelson.png" title="Phil Mickelson"></a>
+		<a class="group2" href="images/players/casper.png" title="Billy Casper"></a>
+        <a class="group2" href="images/players/wright.png" title="Mickey Wright"></a>
+        
+        </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+          </div>
+     </body>
+</html>

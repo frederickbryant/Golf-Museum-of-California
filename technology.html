@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css">
+        
+        <link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+		<title>Technology</title>
+
+	</head>
+	<body>
+
+		<div id="wrapper">
+		  <header>
+				<div id="header-inner">
+					
+                    <div id="logo">
+                    	<img src="images/logo.png" alt="Logo" style="width:150px;height:91.5px;">
+					</div>
+                    
+                    
+                    <div id="nav">
+                    	
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="index.html">HOME</a></button>
+                		</div>
+                    
+                    	<div class="dropdown">
+                          <button class="dropbtn"><a href="history.html">HISTORY</a></button>
+                		</div>
+                    
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="technology.html">TECHNOLOGY</a></button>
+                          
+                		</div>
+                        
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="experience.html">EXPERIENCE</a></button>
+                        
+                		</div>
+                        
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="about.html">ABOUT</a></button>
+                		</div>   
+                    </div>
+                </div>
+         </header>
+         
+         
+         
+         
+         
+        <div id="body-inner">
+        <div id="container">
+         	<div id="first">
+            <h4>Technology</h4>
+            <p>California has also contributed a significant amount to the technology and development of golf. The majority of the top golf brands in the world are located in California, including Titleist, Callaway, Taylormade, Cobra, Odyssey, Scotty Cameron, Cleveland, and many more. We have displays for you to learn about the biggest technological advances in golf history. Titleist revolutionized golf balls in 2000 when it released the Pro V1. In the 1980s Scotty Cameron perfected the putter by refining popular
+designs. He has since won several awards and now works with Titleist. In 1988 Cleveland set the standard for all modern wedges with their 588. Callaway changed the game with the first oversized driver, the Big Bertha. Irons changed completely in 1990 with new forging techniques. Check out our current displays:</p>
+			
+         	</div>
+            <div id="third">
+            
+            	<br>
+                <div>
+                    <div class="hovereffect">
+                    <img class="img-responsive" src="images/thumbs/clubs.png">
+                        <div class="overlay">
+                        <h6>CLUBS</h6>
+                        <a class="info group1" href="images/clubs/putter.png" title="Putters">VIEW</a>
+                        </div>
+                	</div>
+                </div>
+                
+               &ensp;
+                
+                <div>
+                    <div class="hovereffect">
+                    <img class="img-responsive" img src="images/thumbs/balls.png">
+                        <div class="overlay">
+                        <h6>BALLS</h6>
+                        <a class="info group2" href="images/balls/t.png" title="Titleist">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    		</div>
+            
+            
+            <div id="container2" style="visibility: hidden">
+        
+            <a class="group1" href="images/clubs/wedge.png" title="Wedges"></a>
+            <a class="group1" href="images/clubs/irons.png" title="Irons"></a>
+            <a class="group1" href="images/clubs/driver.png" title="Drivers"></a>
+            
+            
+            
+            
+            <a class="group2" href="images/balls/b.png" title="Bridgestone"></a>
+            
+            </div>
+            
+            
+            
+            
+           </div>
+          </div>
+		                 
+        
+        
+         
+         
+         
+    </body>
+</html>
